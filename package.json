@@ -1,0 +1,31 @@
+{
+  "name": "rsk-nft",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "localhost": "npx hardhat node",
+    "flatten": "npx hardhat flatten",
+    "deploy:localhost": "npx hardhat deploy --network localhost",
+    "mint:localhost": "HARDHAT_NETWORK=localhost node ./scripts/mint.js",
+    "read:gas": "curl https://public-node.testnet.rsk.co/ -X POST -H 'Content-Type: application/json' --data '{\"jsonrpc\":\"2.0\",\"method\":\"eth_gasPrice\",\"params\":[],\"id\":1}' > .gas-price-testnet.json",
+    "deploy:rsk_testnet": "npx hardhat deploy --network rsk_testnet",
+    "mint:rsk_testnet": "HARDHAT_NETWORK=rsk_testnet node ./scripts/mint.js",
+    "read:rsk_testnet": "HARDHAT_NETWORK=rsk_testnet node ./scripts/read.js"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/contracts": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "hardhat": "^2.6.4",
+    "hardhat-deploy": "^0.9.4"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-truffle5": "^2.0.2",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.2.0",
+    "ethers": "^5.4.7"
+  }
+}

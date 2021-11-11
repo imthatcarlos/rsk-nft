@@ -1,0 +1,20 @@
+{
+  "localhost": {
+    "WeMint": {
+      "name": "Test NFT",
+      "ticker": "tNFT"
+    },
+    "mint": {
+      "metadataURI": "ipfs://QmP6hh4WSj6qAqtXTqnJH7Xkkw5x5pnH4hP22RKZrQJExp"
+    }
+  },
+  "rsk_testnet": {
+    "WeMint": {
+      "name": "Test NFT",
+      "ticker": "tNFT"
+    },
+    "mint": {
+      "metadataURI": "ipfs://QmP6hh4WSj6qAqtXTqnJH7Xkkw5x5pnH4hP22RKZrQJExp"
+    }
+  }
+}
