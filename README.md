@@ -1,15 +1,21 @@
 # RSK NFT
+Basic NFT deployment to RSK
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+## setup
+```
+nvm use
+yarn
+```
 
-Try running some of the following tasks:
+## compile + deploy
+```
+yarn compile
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+yarn read:gas
+
+yarn deploy:rsk_testnet
+
+yarn mint:rsk_testnet
+
+yarn read:rsk_testnet
 ```
